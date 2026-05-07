@@ -165,7 +165,7 @@ Change multiple tile indexes on the current map.
 Every accepted value for this works the same as [Change Index](#change-index), however they should be prefixed with the layer and tile coordinates.
 
 ### Examples
-This example mixes some available values from [Change Index](#change-index), you can mix and match the variants from there as you need them here, as long as they are prefixed by '\{layer id\} \{x position of tile\} \{y position of tile\}=...', each one must bu split by a pipe ('|').
+This example mixes some available values from [Change Index](#change-index), you can mix and match the variants from there as you need them here, as long as they are prefixed by '\{layer id\} \{x position of tile\} \{y position of tile\}=...', each one must be split by a pipe ('|').
 
 "DMT/changeMultipleIndex_Enter": "Buildings 12 27=indoors/472|Buildings 12 28=indoors/473|Buildings 12 29=indoors/474|Buildings 13 27=indoors/504|Buildings 13 28=indoors/505|Buildings 13 29=indoors/506|Buildings 14 27=indoors/536|Buildings 14 28=indoors/537|Buildings 14 29=indoors/538"
 
