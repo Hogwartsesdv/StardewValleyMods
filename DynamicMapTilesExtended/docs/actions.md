@@ -713,7 +713,7 @@ Take a specified item (or money) from the player.
 
 ### Example
 "DMT/take_Once_Enter": "Money/500"  
-"DMT/take_Talk(Piere)": "(O)MindMeltMax.YouWishThisExisted/DiscountCoupon"  
+"DMT/take_Talk(Pierre)": "(O){{ModId}}_DiscountCoupon"  
 "DMT/take_Talk(Abigail)": "(O)66,5"
 
 
