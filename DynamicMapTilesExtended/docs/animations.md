@@ -10,7 +10,7 @@ This document goes over everything you need to know to create animations using D
 
 ## Basics
 
-Like all DMT actions, animations actions can be used by specifying their key, which in this case is **"DMT/animate"**.
+Like all DMT actions, animations actions can be used by specifying their key, which in this case is **"DMT/animation"**. Animations can be turned off with the key: "DMT/animationOff". 
 
 This action supports the same triggers and modifiers regular actions like give and sound do.
 
@@ -43,7 +43,7 @@ So while this is certainly an option if you're crazy enough to try, there's a be
 
 This asset has a dictionary with a key (I recommend your mod's unique id) and a list of animation objects in the new format.  
 This method does require each animation to have a unique name, however it shortens the value given for each tile action down to:
-``"DMT/animate": "{The unique id in the dictionary},{the unique name of the animation}"``
+``"DMT/animation": "{The unique id in the dictionary},{the unique name of the animation}"``
 
 For those who still wish to use the other method though, I recommend making the object in a separate json file and using the following free online tools to format the value:
 1. https://www.text-utils.com/json-formatter/ to format the object down to a single line
@@ -89,7 +89,7 @@ The fields for animations can be divided up into three categories:
 | Name | Type | Description | Required? | Default Value |
 | ---- | ---- | ----------- | --------- | ------------- |
 | Name | String | A unique name to use this animation for tile actions | Yes | NULL |
-| Position | Vector | The position in the map at which the animation should start | Yes | 0,0 |
+| Position | Vector | The position in the map at which the animation should start (multiply tile coordinates by 64 is suggested) | Yes | 0,0 |
 | Color | Color | The color of the animated texture | Yes | 255,255,255,255 |
 | Length | Number | The amount of frames this animation consists of | No | 8 |
 | Flipped | Boolean | Whether or not the texture of the animation should be flipped | No | false |
@@ -146,7 +146,7 @@ Some examples of how these fields are applied are:
 					"Actions": [
 						{
 							"LogName": "PlayAnimation_1",
-							"Key": "DMT/animate",
+							"Key": "DMT/animation",
 							"Value": "ExampleMod.DMTAnimations,Sparkle",
 							"Trigger": "On"
 						}
