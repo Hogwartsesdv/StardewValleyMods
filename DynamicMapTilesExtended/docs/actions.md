@@ -112,10 +112,19 @@ The quest ID you wish to add.
 Add a tilesheet to the current map.
 
 ### Accepted Value
-A comma (',') delimited string of the id of the tilesheet (must be unique), and the path to the image tilesheet image
+A comma (',') delimited string of the id of the tilesheet (must be unique), and the path to the tilesheet image (image path can be from a load). 
+
+{
+  "LogName": "My Tilesheet Load",
+  "Action": "Load",
+  "Target": "Maps/z_MyUniqueTilesheet",
+  "FromFile": "assets/z_MyUniqueTilesheet.png"
+},
 
 ### Example
-"DMT/addTilesheet_Enter": "DMT/TestTilesheet,Assets/Maps/Tilesheets/paths.png"
+"DMT/addTilesheet_Enter": "{{ModId}}_MyCustomId1,Maps/Festivals"
+"DMT/addTilesheet_Load": "{{ModId}}_MyCustomId2,Maps/z_MyUniqueTilesheet_{{ModId}}",
+  "DMT/changeMultipleIndex_Item((O)390)": "Front 59 24={{ModId}}_MyCustomId2/0"
 
 
 
